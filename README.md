@@ -3,7 +3,7 @@
 
 
 ## Training phase 
-![Training](https://github.com/chinmayn1/springboot-thymeleaf-crud/blob/main/Screenshots/AddEmployee.jpg)
+![Training](https://github.com/chinmayn1/Botanical-disease-detection/blob/main/ScreenShots/Training_Phase.jpg)
 
 ## Testing phase 
-![Testing](https://github.com/chinmayn1/springboot-thymeleaf-crud/blob/main/Screenshots/AddEmployee.jpg)
+![Testing](https://github.com/chinmayn1/Botanical-disease-detection/blob/main/ScreenShots/Testing_Phase.jpg)
