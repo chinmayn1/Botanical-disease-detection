@@ -128,14 +128,18 @@ clip.y = clipY;
 * If so, making the image width boundary as the clip width.
 */
 if ((size.width + clipX) > img.getWidth())
-size.width = img.getWidth() - clipX;
+{
+    size.width = img.getWidth() - clipX;
+}
  
 /**
 * Checking if the height of the clip area lies outside the image.
 * If so, making the image height boundary as the clip height.
 */
 if ((size.height + clipY) > img.getHeight())
-size.height = img.getHeight() - clipY;
+{
+    size.height = img.getHeight() - clipY;
+}
  
 /**Setting up the clip are based on our clip area size adjustment**/
 clip = new Rectangle(size);
