@@ -72,7 +72,7 @@ public class GetHistogram extends JPanel {
                 int igreen = (0xff &(picture.getRGB(w, h)  >> 8));
                 int iblue =  (0xff & picture.getRGB(w, h));
                 
-                if(colorReceived.equals("red"))
+                if("red".equals(colorReceived))
                 {
                    samples[ired]++; 
                    if(samples[ired] > maxNumSamples)
@@ -81,7 +81,7 @@ public class GetHistogram extends JPanel {
                    }
                   
                 }
-                else if(colorReceived.equals("green"))
+                else if("green".equals(colorReceived))
                 {
                    samples[igreen]++; 
                    if(samples[igreen] > maxNumSamples)
@@ -89,7 +89,7 @@ public class GetHistogram extends JPanel {
                        maxNumSamples = samples[igreen];
                    }
                 }
-                else if(colorReceived.equals("blue"))
+                else if("blue".equals(colorReceived))
                 {
                     samples[iblue]++; 
                    if(samples[iblue] > maxNumSamples)
@@ -110,17 +110,17 @@ public class GetHistogram extends JPanel {
     public void paintComponent(Graphics g)
     {
       
-        if(colorReceived.equals("red"))
+        if("red".equals(colorReceived))
         {
             g.setColor(Color.RED);
             //g.setColor(Color.GREEN);
              //g.setColor(Color.BLUE);
         }
-        else if (colorReceived.equals("green"))
+        else if ("green".equals(colorReceived))
         {
             g.setColor(Color.GREEN);
         }
-        else if (colorReceived.equals("blue"))
+        else if ("blue".equals(colorReceived))
         {
             g.setColor(Color.BLUE);
         }
